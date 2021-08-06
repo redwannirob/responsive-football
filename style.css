@@ -1,0 +1,170 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+/* top section start */
+.container{
+    background-color: #2D25A0;
+    height: 677px;
+    justify-content: center;
+}
+.half-width{
+    align-items: center;
+    width: 50%;
+}
+.half-width-text{
+    position: absolute;
+    top: 100px;
+}
+.text{
+    text-align: center;
+}
+.half-width h1{
+    /* position: absolute; */
+    margin-left: 155px;
+    font-size: 64px;
+    color: whitesmoke;
+}
+.half-width button{
+    position: absolute;
+    bottom: 350px;
+    left: 70px;
+    margin-left: 200px;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: indianred;
+    color: whitesmoke;
+    font-weight: 700;
+}
+.live-button:hover{
+    border: 5px solid slategray;
+}
+.half-width img{
+    position: absolute;
+    width: 556.01px;
+    height: 438px;
+    left: 1299.01px;
+    top: 153px;
+}
+/* top section end */
+
+/* mid section start */
+
+.mid-section{
+    justify-content: center;
+    width: 80%;
+}
+.container-mid{
+    width: 90%;
+    position: absolute;
+    left: 100px;
+}
+.players-div{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    margin-left: 250px;
+}
+.player-div{
+    width: 330px;
+    height: 456px;
+    background-color: rgba(206, 208, 209, 0.76);
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 30px;
+    padding: 15px;
+    box-shadow: 10px 10px 10px rgb(75, 75, 75);
+}
+.player-div img{
+    width: 330px;
+}
+.player-div> h3{
+    text-align: center;
+}
+/* mid section end */
+
+
+
+/* last section start */
+.last-section img{
+    position: absolute;
+    left: 500px;
+    top: 3400px;
+}
+.icons{
+    position: absolute;
+    top: 3600px;
+    left: 850px;
+    display: flex;
+}
+.icons i{
+    margin: 10px;
+    color: slategray;
+}
+footer{
+    position: absolute;
+    top: 3680px;
+    left: 830px;
+}
+footer p{
+    font-size: 20px;
+}
+/* last section end */
+
+
+/* media queries start */
+
+@media only screen and (max-width:688px) {
+    .half-width{
+        width: 50%;
+    }
+    .half-width img{
+        width: 100%;
+    }
+    
+    .half-width button{
+        position: absolute;
+        top: 570px;
+        border: 2px solid whitesmoke;
+    }
+    .players-div{
+        grid-template-columns: repeat(1,1fr);
+        position: absolute;
+        right: 220px;
+    }
+    .last-section>img{
+        width:100%;
+        position: absolute;
+        top: 8000px;
+        right: 200px;
+    }
+    .last-section{
+        position: absolute;
+        top: 4200px;
+        right: 1150px;
+    }
+
+}
+
+/* tab and laptops */
+
+@media only screen and (max-width:796px) {
+    .half-width{
+        width: 100%;
+    }
+    .players-div{
+        grid-template-columns: repeat(2,1fr);
+        position: absolute;
+        right: 130px;
+        width: 100%;
+    }
+    .last-section{
+        position: absolute;
+        top: 1000px;
+        right: 1200px;
+    }
+    .last-section img{
+        width: 70%;
+    }
+}
